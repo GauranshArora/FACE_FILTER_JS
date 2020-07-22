@@ -161,7 +161,7 @@ function maskOnFace(){
     push();
     const x = Math.abs(positions[13][0] - positions[1][0]) * 1.5; // The width is given by the face width, based on the geometry
     const y = Math.abs(positions[37][1] - Math.max(positions[16][1], positions[20][1])) * 2; // The height is given by the distance from nose to chin, times 2
-    translate(-x/1.94, -18);
+    translate(-x/2.2, -18);
     image(mask, positions[62][0], positions[62][1], x, y); // Show the mask at the center of the face
     pop();
 }
